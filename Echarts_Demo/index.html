@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>春运航空——可视化</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+  	<!--首页-->
+    <div id="0">
+    <header>
+      <h1>春运方式——信息可视化</h1>      	
+     <div class="show-time"></div> 	
+    </header>
+    </div>
+    <div class="second">
+    <!---------------------------------------------------------------------------------------->
+    <h2>欢迎使用春运出行航空智慧平台...</h2>
+      
+       <script>
+        var t = null;
+        t = setTimeout(time, 1000); 
+        function time() {
+          clearTimeout(t); 
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); 
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".show-time").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "日-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script> 
+       	<div class="vid">
+      <video src="video/aa.mp4" poster="http://www.youname.com/images/first.png" autoplay="autoplay" muted="muted" loop  width="1200"></video>  
+     
+     </div>
+     
+<!--=============================================================================================================-->
+    <!-- 页面主体 -->
+    <div id="1">
+    <section class="mainbox">
+      <!-- 左侧盒子 -->
+      <div class="column">
+        <div class="panel bar">
+          <h2>春运方式分布</h2>
+          <!-- 图表放置盒子 -->
+          <div class="chart"></div>
+          <!-- 伪元素绘制盒子下边角 -->
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>年时间-人数变化
+            <a class="a-active" href="javascript:;">2020</a>
+            <a href="javascript:;">2021</a>
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>乘机-年龄分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <!-- 中间盒子 -->
+      <div class="column">
+        <!-- 头部 no模块 -->
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>89652</li>
+              <li>40983</li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>春节返回人数</li>
+              <li>机票供应人数</li>
+            </ul>
+          </div>
+        </div>
+        <!-- map模块 -->
+        <div class="map">
+          <div class="map1"></div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+          <div class="chart"></div>
+        </div>
+      </div>
+      <!-- 右侧盒子 -->
+      <div class="column">
+        <div class="panel bar2">
+          <h2>乘机理由统计</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line2">
+          <h2>日时间-人数分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie2">
+          <h2>人数-地区分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    </div>   
+    <!----------------------------------------------------------------------->
+     <div id="2">
+    <section class="second">
+		
+     <section class="mainbox">
+      <!-- 左侧盒子 -->
+      <div class="column">
+        <div class="panel ba1">
+          <h2>人数与星期相关波形图</h2>
+          <!-- 图表放置盒子 -->
+          <div class="chart"></div>
+          <!-- 伪元素绘制盒子下边角 -->
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel ba2">
+          <h2>北上广拥堵程度统计
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel ba4">
+          <h2>交通方式-星期分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <!-- 中间盒子 -->
+      <div class="column">
+        <!-- 头部 no模块 -->
+        <div class="no">
+          <div class="no-hd">
+            <!--<ul>
+              <li>89652</li>
+              <li>40983</li>
+            </ul>-->
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- map模块 -->
+        <div class="mm0">
+          <div class="map1">jj</div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+          <div class="chart"></div>
+        </div>
+      </div>
+      <!-- 右侧盒子 -->
+      <div class="column">
+        <div class="panel yy1">
+          <h2>近期出行人数变化</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel yy2">
+          <h2>温度等因素与人数关系</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel ba3">
+          <h2>人数-主要城市比较</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+   
+</section>
+</div>
+    <!--njhkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+         <div id="3">
+        <section class="second">
+		
+     <section class="mainbox">
+      <!-- 左侧盒子 -->
+      <div class="column">
+        <div class="panel br1">
+          <h2>出行人数对比气泡图</h2>
+          <!-- 图表放置盒子 -->
+          <div class="chart"></div>
+          <!-- 伪元素绘制盒子下边角 -->
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel bb3">
+          <h2>疫情前后出行人数对比</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel bb4">
+          <h2>交通工具人数分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <!-- 中间盒子 -->
+      <div class="column">
+        <!-- 头部 no模块 -->
+        <div class="no">
+          <div class="no-hd">
+            <!--<ul>
+              <li>89652</li>
+              <li>40983</li>
+            </ul>-->
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <!-- map模块 -->
+        <div class="md0">
+          <div class="map1">jj</div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+          <div class="chart"></div>
+        </div>
+      </div>
+      <!-- 右侧盒子 -->
+      <div class="column">
+        <div class="panel br2">
+          <h2>疫情后出行人数散点分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel br3">
+          <h2>出行交通方式桑基图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel p2">
+          <h2>交通工具速度比较</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+   </div>
+    
+
+<div class="ad">
+									<ul>
+										<li>
+											<a href="#0">
+												<div class="icon fa fa-angle-up fa-2x"></div>
+												<div class="icon">首页</div>
+											</a>
+										</li>
+										<li>
+											<a href="#1">
+												<div class="icon fa fa-angle-up fa-2x"></div>
+												<div class="icon">页面1</div>
+											</a>
+											
+										</li>
+										<li>
+											<a href="#2">
+												<div class="icon fa fa-angle-up fa-2x"></div>
+												<div class="icon">页面2</div>
+											</a>
+											
+										</li>
+										<li>
+											<a href="#3">
+												<div class="icon fa fa-angle-up fa-2x"></div>
+												<div class="icon">页面3</div>
+											</a>
+										</li>
+										
+									</ul>
+								</div>
+	
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- 引入china.js 完成地图模块 -->
+    <script src="js/china.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
